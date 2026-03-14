@@ -1,0 +1,27 @@
+# Terraform secrets - NEVER commit
+terraform.tfvars
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+*.tfplan
+tfplan
+
+# Lambda build artifacts
+lambda/*.zip
+modules/regional_stack/*.zip
+
+# AWS CLI config folder (should not be in project)
+aws/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
