@@ -5,7 +5,7 @@ resource "random_password" "cognito" {
   lower            = true
   numeric          = true
   special          = true
-  override_special = "!@#$"  # Cognito-safe special chars
+  override_special = "!@#$" # Cognito-safe special chars
   min_upper        = 1
   min_lower        = 1
   min_numeric      = 1

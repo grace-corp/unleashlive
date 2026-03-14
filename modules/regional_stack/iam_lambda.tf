@@ -112,9 +112,9 @@ resource "aws_iam_role_policy" "ecs_task_policy" {
         Resource = var.sns_topic_arn
       },
       {
-        Sid    = "Logs"
-        Action = ["logs:CreateLogGroup", "logs:CreateLogStream", "logs:PutLogEvents"]
-        Effect = "Allow"
+        Sid      = "Logs"
+        Action   = ["logs:CreateLogGroup", "logs:CreateLogStream", "logs:PutLogEvents"]
+        Effect   = "Allow"
         Resource = "arn:aws:logs:*:*:*"
       }
     ]
